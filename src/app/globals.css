@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-parchment: #faf8f4;
+  --bg-warm: #fdfbf7;
+  --navy: #0f172a;
+  --teal: #0f766e;
+  --indigo: #4338ca;
+  --amber: #d97706;
+  --coral: #e11d48;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--navy);
+  background: var(--bg-parchment);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Leaflet popup overrides for field journal theme */
+.leaflet-popup-content-wrapper {
+  border-radius: 14px !important;
+  border: 2px solid #e7e5e4 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  background: #fefdfb !important;
+}
+
+.leaflet-popup-tip {
+  background: #fefdfb !important;
+  border: 1px solid #e7e5e4 !important;
+}
+
+.leaflet-popup-close-button {
+  color: #78716c !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+/* Hide Leaflet default icon shadows */
+.leaflet-marker-icon {
+  background: none !important;
+  border: none !important;
+}
+
+/* Scrollbar styling for journal panel */
+.journal-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.journal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.journal-scroll::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 999px;
+}

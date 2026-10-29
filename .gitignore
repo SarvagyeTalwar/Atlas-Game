@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Next.js Build Output
+.next/
+.next-dev/
+out/
+build/
+dist/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# TypeScript & Vercel Cache
+*.tsbuildinfo
+.vercel/
+.neon*
+
+# Environment Variables & Secrets (CRITICAL)
+.env*
+!.env.example
+
+# Large Dataset (53MB - download instructions in README)
+data/*.json
+
+# System Files
+.DS_Store
+Thumbs.db
